@@ -1,8 +1,11 @@
 #include <physical_layouts.dtsi>
 
 / {
+  chosen {
+      zmk,physical-layout = &physical_layout0;
+  };
+
   physical_layout0: physical_layout_0 {
-      kscan = <&default_kscan>;
       transform = <&default_transform>;
       compatible = "zmk,physical-layout";
       display-name = "Redsplit Keyboard";
