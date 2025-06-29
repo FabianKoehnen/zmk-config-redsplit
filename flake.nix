@@ -20,7 +20,7 @@
         src = nixpkgs.lib.sourceFilesBySuffices self [ ".board" ".cmake" ".conf" ".defconfig" ".dts" ".dtsi" ".json" ".keymap" ".overlay" ".shield" ".yml" "_defconfig" ];
 
         board = "puchi_ble_v1";
-        shield = "redsplit_%PART%";
+        shield = "redsplit_%PART% nice_view_adapter nice_view";
 
         zephyrDepsHash = "sha256-R+2W/onIy4VfB61OkiNoZyez20VtVDbp2GnAALXwYt8=";
 
