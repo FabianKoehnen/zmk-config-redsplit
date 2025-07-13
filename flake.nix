@@ -29,7 +29,7 @@
           "zmk-usb-logging"
         ];
 
-        zephyrDepsHash = "sha256-R+2W/onIy4VfB61OkiNoZyez20VtVDbp2GnAALXwYt8=";
+        zephyrDepsHash = "sha256-s+0zkWKjsnXqf6Cw/jZNdOrDsWpVVnlyTkPVGxXv5Kw=";
 
         meta = {
           description = "ZMK firmware";
