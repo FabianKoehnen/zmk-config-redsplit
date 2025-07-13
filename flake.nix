@@ -14,7 +14,8 @@
     packages = forAllSystems (system: rec {
       default = firmware;
 
-      firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
+      # firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
+      firmware = (import ./nix/builders.nix { inherit (nixpkgs.legacyPackages.${system}) callPackage; }).buildSplitKeyboard {
         name = "firmware";
 
         src = nixpkgs.lib.sourceFilesBySuffices self [ ".board" ".cmake" ".conf" ".defconfig" ".dts" ".dtsi" ".json" ".keymap" ".overlay" ".shield" ".yml" "_defconfig" ];
@@ -31,11 +32,11 @@
 
         zephyrDepsHash = "sha256-R+2W/onIy4VfB61OkiNoZyez20VtVDbp2GnAALXwYt8=";
 
-        meta = {
-          description = "ZMK firmware";
-          license = nixpkgs.lib.licenses.mit;
-          platforms = nixpkgs.lib.platforms.all;
-        };
+        # meta = {
+        #   description = "ZMK firmware";
+        #   license = nixpkgs.lib.licenses.mit;
+        #   platforms = nixpkgs.lib.platforms.all;
+        # };
       };
 
       flash = zmk-nix.packages.${system}.flash.override { inherit firmware; };
