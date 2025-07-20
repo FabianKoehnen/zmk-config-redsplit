@@ -1,7 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "./redsplit-layout.dtsi"
-#include <behaviors/input_processor_gestures.dtsi>
-#include <behaviors/input_processor_absolute_to_relative.dtsi>
+// #include <behaviors/input_processor_gestures.dtsi>
+// #include <behaviors/input_processor_absolute_to_relative.dtsi>
 
 / {
  	chosen {
