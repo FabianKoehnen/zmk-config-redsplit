@@ -21,6 +21,7 @@
         src = nixpkgs.lib.sourceFilesBySuffices self [ ".board" ".cmake" ".conf" ".defconfig" ".dts" ".dtsi" ".json" ".keymap" ".overlay" ".shield" ".yml" "_defconfig" ];
 
         board = "puchi_ble_v1";
+        # shield = "tester_pro_micro";
         shield = "redsplit_%PART%";
         parts = [
           "left nice_view"
@@ -30,7 +31,7 @@
           "zmk-usb-logging"
         ];
 
-        zephyrDepsHash = "sha256-R+2W/onIy4VfB61OkiNoZyez20VtVDbp2GnAALXwYt8=";
+        zephyrDepsHash = "sha256-iQzbYGis8XB9aUYHkVrnnhEc5XoRaHZkWPeSEERSLwI=";
 
         # meta = {
         #   description = "ZMK firmware";
