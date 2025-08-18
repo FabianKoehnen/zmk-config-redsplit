@@ -31,5 +31,6 @@ in runCommand name ((lib.removeAttrs args [ "zephyrDepsHash" "westDeps" "westRoo
   parts=(${builtins.concatStringsSep " " (map (x: "\"${x}\"") parts)})
   for part in "''${parts[@]}"; do
     ln -s ''$(printenv "''$part")/zmk.uf2 $out/zmk_"$part".uf2
+    ln -s ''$(printenv "''$part")/zephyr.dts $out/zephyr_"$part".dts
   done
 ''
