@@ -35,10 +35,6 @@ nice_view_spi: &spi0 {
     cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
 };
 
-// &glidepoint_listener {
-//     status = "okay";
-// };
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {

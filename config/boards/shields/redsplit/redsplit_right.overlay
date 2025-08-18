@@ -3,12 +3,6 @@
 #include "redsplit.dtsi"
 
 / {
-
-  // split_inputs {
-  //     compatible = "zmk,split-inputs";
-  //     input = <&glidepoint>;
-  // };
-
   default_kscan: kscan {
     compatible = "zmk,kscan-gpio-matrix";
     diode-direction = "col2row";
@@ -38,40 +32,3 @@
 &default_transform {
   col-offset = <7>;
 };
-
-// &i2c0 {
-//     status = "okay";
-//     glidepoint: glidepoint@2a {
-//         compatible = "cirque,pinnacle";
-//         reg = <0x2a>;
-//         status = "okay";
-//         dr-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
-//         sensitivity = "4x";
-//         // absolute-mode;
-//     };
-// };
-
-// &pinctrl {
-//     i2c0_default: i2c0_default {
-//         group1 {
-//             psels = <NRF_PSEL(TWIM_SDA, 0, 15)>,
-//                 <NRF_PSEL(TWIM_SCL, 0, 17)>;
-//             bias-pull-up;
-//         };
-//     };
-
-//     i2c0_sleep: i2c0_sleep {
-//         group1 {
-//             psels = <NRF_PSEL(TWIM_SDA, 0, 15)>,
-//                 <NRF_PSEL(TWIM_SCL, 0, 17)>;
-//             low-power-enable;
-//         };
-//     };
-// };
-
-// &glidepoint_split {
-//     device = <&glidepoint>;
-
-//     // // Optional
-//     // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-// };
