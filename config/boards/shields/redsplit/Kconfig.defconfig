@@ -18,8 +18,4 @@ if SHIELD_REDSPLIT_LEFT || SHIELD_REDSPLIT_RIGHT
   CONFIG_INPUT_THREAD_STACK_SIZE=4096
   config ZMK_SPLIT
       default y
-
-  config ZMK_POINTING
-    default y
-
 endif
