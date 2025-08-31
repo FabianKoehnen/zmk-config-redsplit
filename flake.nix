@@ -30,6 +30,7 @@
         snippets = [
           "zmk-usb-logging"
         ];
+        enableZmkStudio = true;
 
         zephyrDepsHash = "sha256-iQzbYGis8XB9aUYHkVrnnhEc5XoRaHZkWPeSEERSLwI="; #with gestures
         # zephyrDepsHash = "sha256-rsRz5Cp7l6ULEI0WawnCnNANGIy8UAcjhAQwShxyt6I=";

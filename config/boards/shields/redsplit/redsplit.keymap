@@ -10,23 +10,23 @@
 
         default_layer {
             bindings = <                                                                              //Left
-                &lt 2 TAB   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5                                 &kp N6        &kp N7          &kp N8      &kp N9     &kp N0
-                &kp ESC     &kp Q       &kp W       &kp E       &kp R       &kp T                                  &kp Y         &kp U           &kp I       &kp O      &kp P
+                &kp TAB     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5                                 &kp N6        &kp N7          &kp N8      &kp N9     &kp N0
+                &lt 2 ESC   &kp Q       &kp W       &kp E       &kp R       &kp T                                  &kp Y         &kp U           &kp I       &kp O      &kp P
                 &kp LSHIFT  &kp A       &kp S       &kp D       &kp F       &kp G                                  &kp H         &kp J           &kp K       &kp L      &kp SEMICOLON
                 &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp B                                  &kp N         &kp M           &kp COMMA   &kp PERIOD &kp SLASH
-                                        &kp LBKT    &kp RBKT    &kp LMETA   &none     &kp SPACE       &kp ENTER    &kp EQUAL     &kp BACKSPACE   &kp SQT     &kp NUBS
-                                                                            &mo 1     &kp RALT        &kp RSHIFT   &kp MINUS
+                                        &kp LBKT    &kp RBKT    &kp LMETA   &kp SPACE   &kp SPACE     &kp ENTER    &kp EQUAL     &kp BACKSPACE   &kp SQT     &kp NUBS
+                                                                            &mo 1       &kp RALT      &kp RSHIFT   &kp MINUS
             >;
         };
 
         alt_layer {
             bindings = <                                                //Left
-                &none   &none  &none  &none  &none  &mmv MOVE_RIGHT             &none     &none     &none   &none      &none
-                &none   &none  &none  &none  &none  &none                       &none     &none     &none   &none      &none
-                &none   &none  &none  &none  &none  &none                       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-                &none   &none  &none  &none  &none  &none                       &none     &none     &none   &none      &none
-                               &none  &none  &trans &none  &none        &none   &none     &none     &none   &none     
-                                                    &none  &none        &none   &none
+                &none  &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                      &kp F6    &kp F7    &kp F8  &kp F9     &kp F10
+                &none  &none  &none  &none  &none  &none                       &none     &none     &none   &kp F11    &kp F12 
+                &none  &none  &none  &none  &none  &none                       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+                &none  &none  &none  &none  &none  &none                       &none     &none     &none   &none      &none
+                              &none  &none  &trans &none  &none        &none   &none     &kp DEL   &none   &none     
+                                                   &none  &kp LALT     &none   &none
             >;
         };        
         
