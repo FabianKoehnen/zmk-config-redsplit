@@ -21,7 +21,7 @@
         src = nixpkgs.lib.sourceFilesBySuffices self [ ".board" ".cmake" ".conf" ".defconfig" ".dts" ".dtsi" ".json" ".keymap" ".overlay" ".shield" ".yml" "_defconfig" ];
 
         board = "puchi_ble_v1";
-        # shield = "tester_pro_micro";
+        # shield = "settings_reset";
         shield = "redsplit_%PART%";
         parts = [
           "left nice_view"
@@ -30,7 +30,7 @@
         snippets = [
           "zmk-usb-logging"
         ];
-        enableZmkStudio = true;
+        enableZmkStudio = false;
 
         zephyrDepsHash = "sha256-iQzbYGis8XB9aUYHkVrnnhEc5XoRaHZkWPeSEERSLwI="; #with gestures
         # zephyrDepsHash = "sha256-rsRz5Cp7l6ULEI0WawnCnNANGIy8UAcjhAQwShxyt6I=";
