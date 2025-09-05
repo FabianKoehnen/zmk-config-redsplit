@@ -10,7 +10,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp RALT>, <&kp LALT>;
+            bindings = <&kp LALT>, <&kp RALT>;
         };
     };
 
@@ -25,7 +25,7 @@
                 &kp LSHIFT  &kp A       &kp S       &kp D       &kp F       &kp G                                  &kp H               &kp J           &kp K                &kp L         &kp SEMICOLON
                 &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp B                                  &kp N               &kp M           &kp COMMA            &kp PERIOD    &kp SLASH
                                         &kp EQUAL   &kp MINUS   &kp LMETA   &kp SPACE   &lt 1 DOLLAR  &kp ENTER    &mt RCTRL LBKT      &kp BACKSPACE   &kp SINGLE_QUOTE     &kp BACKSLASH
-                                                                            &kp LALT    &kp LSHIFT    &kp RSHIFT   &mt RALT RBKT
+                                                                            &td_alt    &kp LSHIFT    &kp RSHIFT   &mt RALT RBKT
             >;
         };
 
