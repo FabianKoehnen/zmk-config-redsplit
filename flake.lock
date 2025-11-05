@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1750994206,
-        "narHash": "sha256-3u6rEbIX9CN/5A5/mc3u0wIO1geZ0EhjvPBXmRDHqWM=",
+        "lastModified": 1762286042,
+        "narHash": "sha256-OD5HsZ+sN7VvNucbrjiCz7CHF5zf9gP51YVJvPwYIH8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "80d50fc87924c2a0d346372d242c27973cf8cdbf",
+        "rev": "12c1f0253aa9a54fdf8ec8aecaafada64a111e24",
         "type": "github"
       },
       "original": {
@@ -29,15 +29,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1751157836,
-        "narHash": "sha256-xm8szC6nTDiV05ccV0cWMlRQmtmo5Ikw3r1atMjFp4g=",
-        "owner": "lilyinstarlight",
+        "lastModified": 1762363523,
+        "narHash": "sha256-it9Tnf92I0HVUEOnnXx0ONXjoKevGrkamMxhvSu3k8k=",
+        "owner": "FabianKoehnen",
         "repo": "zmk-nix",
-        "rev": "9851a9b29d35e77da465406e8b8d8dbee36c79d7",
+        "rev": "8f78e80a40123df84712dfa298836c814df5926c",
         "type": "github"
       },
       "original": {
-        "owner": "lilyinstarlight",
+        "owner": "FabianKoehnen",
         "repo": "zmk-nix",
         "type": "github"
       }

@@ -5,6 +5,11 @@
 #include <behaviors/input_processor_gestures.dtsi>
 #include <behaviors/input_processor_absolute_to_relative.dtsi>
 
+&zip_gestures {
+    tap-detection;
+    tap-timout-ms=<120>;
+};
+
 / {
   chosen {
     zmk,kscan = &default_kscan;

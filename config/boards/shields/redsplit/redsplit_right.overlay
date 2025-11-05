@@ -63,7 +63,7 @@ cirque_pinnacle_i2c: &i2c0 {
         reg = <0x2a>;
         status = "okay";
         dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
-        sensitivity = "4x";
+        // sensitivity = "2x";
         // sleep; 
         // no-taps;
         absolute-mode;

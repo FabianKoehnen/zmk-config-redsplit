@@ -3,7 +3,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     zmk-nix = {
-      url = "github:lilyinstarlight/zmk-nix";
+      url = "github:FabianKoehnen/zmk-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -14,8 +14,8 @@
     packages = forAllSystems (system: rec {
       default = firmware;
 
-      # firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
-      firmware = (import ./nix/builders.nix { inherit (nixpkgs.legacyPackages.${system}) callPackage; }).buildSplitKeyboard {
+      firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
+      # firmware = (import ./nix/builders.nix { inherit (nixpkgs.legacyPackages.${system}) callPackage; }).buildSplitKeyboard {
         name = "firmware";
 
         src = nixpkgs.lib.sourceFilesBySuffices self [ ".board" ".cmake" ".conf" ".defconfig" ".dts" ".dtsi" ".json" ".keymap" ".overlay" ".shield" ".yml" "_defconfig" ];
@@ -32,8 +32,10 @@
         ];
         enableZmkStudio = false;
 
-        zephyrDepsHash = "sha256-iQzbYGis8XB9aUYHkVrnnhEc5XoRaHZkWPeSEERSLwI="; #with gestures
+        # zephyrDepsHash = "sha256-iQzbYGis8XB9aUYHkVrnnhEc5XoRaHZkWPeSEERSLwI="; #with gestures
         # zephyrDepsHash = "sha256-rsRz5Cp7l6ULEI0WawnCnNANGIy8UAcjhAQwShxyt6I=";
+        # zephyrDepsHash = "sha256-baYqnMUnZ4CxOj3ThVXwZnIHSIkN2HwLUA0FhMCX3jk=";
+        zephyrDepsHash = "sha256-baYqnMUnZ4CxOj3ThVXwZnIHSIkN2HwLUA0FhMCX3jk=";
 
         # meta = {
         #   description = "ZMK firmware";
