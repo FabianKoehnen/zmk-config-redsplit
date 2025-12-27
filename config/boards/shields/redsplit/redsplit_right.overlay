@@ -6,7 +6,7 @@
     compatible = "zmk,kscan-gpio-matrix";
     diode-direction = "col2row";
 
-    row-gpios = 
+    row-gpios =
                 <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -14,9 +14,9 @@
                 <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
-    col-gpios = 
+    col-gpios =
                 <&pro_micro 20 (GPIO_ACTIVE_HIGH| GPIO_PULL_DOWN)>,
-                <&pro_micro 19 (GPIO_ACTIVE_HIGH| GPIO_PULL_DOWN)>, 
+                <&pro_micro 19 (GPIO_ACTIVE_HIGH| GPIO_PULL_DOWN)>,
                 <&pro_micro 18 (GPIO_ACTIVE_HIGH| GPIO_PULL_DOWN)>,
                 <&pro_micro 15 (GPIO_ACTIVE_HIGH| GPIO_PULL_DOWN)>,
                 <&pro_micro 14 (GPIO_ACTIVE_HIGH| GPIO_PULL_DOWN)>,
@@ -62,11 +62,12 @@ cirque_pinnacle_i2c: &i2c0 {
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "okay";
-        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
+        data-ready-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
         // sensitivity = "2x";
-        // sleep; 
+        // sleep;
         // no-taps;
-        absolute-mode;
+        sleep-mode-enable;
+        data-mode = "absolute";
     };
 };
 
