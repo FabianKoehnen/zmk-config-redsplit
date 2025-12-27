@@ -55,7 +55,7 @@
           # zephyrDepsHash = "sha256-iQzbYGis8XB9aUYHkVrnnhEc5XoRaHZkWPeSEERSLwI="; #with gestures
           # zephyrDepsHash = "sha256-rsRz5Cp7l6ULEI0WawnCnNANGIy8UAcjhAQwShxyt6I=";
           # zephyrDepsHash = "sha256-baYqnMUnZ4CxOj3ThVXwZnIHSIkN2HwLUA0FhMCX3jk=";
-          zephyrDepsHash = "sha256-zsTDZAZ8dbCvnrpFFx50i6O+is5qA64i66X6Myl1+sA=";
+          zephyrDepsHash = "sha256-PZUGADLVa2DQVHHOLxzkYjz3r/GAQ0pyfMX1xsmFZrE=";
 
           # meta = {
           #   description = "ZMK firmware";
