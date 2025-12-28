@@ -22,7 +22,6 @@
         default = firmware;
 
         firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
-          # firmware = (import ./nix/builders.nix { inherit (nixpkgs.legacyPackages.${system}) callPackage; }).buildSplitKeyboard {
           name = "firmware";
 
           src = nixpkgs.lib.sourceFilesBySuffices self [
@@ -52,16 +51,7 @@
           ];
           enableZmkStudio = false;
 
-          # zephyrDepsHash = "sha256-iQzbYGis8XB9aUYHkVrnnhEc5XoRaHZkWPeSEERSLwI="; #with gestures
-          # zephyrDepsHash = "sha256-rsRz5Cp7l6ULEI0WawnCnNANGIy8UAcjhAQwShxyt6I=";
-          # zephyrDepsHash = "sha256-baYqnMUnZ4CxOj3ThVXwZnIHSIkN2HwLUA0FhMCX3jk=";
-          zephyrDepsHash = "sha256-PZUGADLVa2DQVHHOLxzkYjz3r/GAQ0pyfMX1xsmFZrE=";
-
-          # meta = {
-          #   description = "ZMK firmware";
-          #   license = nixpkgs.lib.licenses.mit;
-          #   platforms = nixpkgs.lib.platforms.all;
-          # };
+          zephyrDepsHash = "sha256-tRGzf3RbWDvf37itNqs1E/fYLGjJnY3JuS9sm0IB7YM=";
         };
 
         flash = zmk-nix.packages.${system}.flash.override { inherit firmware; };
