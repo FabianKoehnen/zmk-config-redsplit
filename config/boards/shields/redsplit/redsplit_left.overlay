@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "redsplit_left_trackpad.dtsi"
+#include "redsplit.dtsi"
 
 / {
   default_kscan: kscan {
@@ -50,4 +50,8 @@ nice_view_spi: &spi0 {
             low-power-enable;
         };
     };
+};
+
+&glidepoint_listener {
+    status = "okay";
 };

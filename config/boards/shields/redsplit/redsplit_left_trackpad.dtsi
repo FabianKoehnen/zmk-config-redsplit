@@ -1,6 +1,0 @@
-#include "redsplit.dtsi"
-#include <input/processors.dtsi>
-
-&glidepoint_listener {
-    status = "okay";
-};
